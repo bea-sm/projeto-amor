@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Viewport essencial para responsividade em celulares e tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+  <title>❤️ Você me ama? ❤️</title>
+  <meta name="description" content="Um pedido de namoro especial, feito com carinho." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonte romântica e delicada via Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Camada de partículas/brilhos flutuantes no fundo (gerada via JS) -->
+  <div id="camadaParticulas" class="camada-particulas" aria-hidden="true"></div>
+
+  <!-- Camada de corações caindo (gerada via JS na tela 2) -->
+  <div id="camadaCoracoes" class="camada-coracoes" aria-hidden="true"></div>
+
+  <!-- Camada de confete (ativada ao clicar em "Sim") -->
+  <div id="camadaConfete" class="camada-confete" aria-hidden="true"></div>
+
+  <!-- ===================== TELA 1: A PERGUNTA ===================== -->
+  <section id="telaPergunta" class="tela tela-pergunta">
+    <div class="conteudo-central">
+
+      <h1 class="titulo-pergunta">❤️ Você me ama? ❤️</h1>
+
+      <div class="moldura-gatinho">
+        <img
+          src="assets/gatinho-fofo.gif"
+          alt="Gatinho fofo perguntando"
+          class="gif-gatinho"
+          id="gifGatinhoPergunta"
+        />
+      </div>
+
+      <div class="grupo-botoes">
+        <button id="botaoSim" class="botao botao-sim" type="button">
+          ❤️ Sim
+        </button>
+        <button id="botaoNao" class="botao botao-nao" type="button">
+          🤍 Não
+        </button>
+      </div>
+
+      <p class="dica-mobile">toca no coraçãozinho pra continuar 😉</p>
+    </div>
+  </section>
+
+  <!-- ===================== TELA 2: EU TE AMO ===================== -->
+  <section id="telaAmor" class="tela tela-amor escondido">
+    <div class="conteudo-central">
+
+      <div class="moldura-gatinho moldura-gatinho--amor">
+        <img
+          src="assets/gatinho-feliz-coracao.gif"
+          alt="Gatinho feliz segurando um coração"
+          class="gif-gatinho gif-gatinho--zoom"
+          id="gifGatinhoFeliz"
+        />
+      </div>
+
+      <h2 class="titulo-amor" id="tituloEuTeAmo">❤️ Eu te amo ❤️</h2>
+
+      <article class="carta-amor" id="cartaAmor">
+        <p><strong>Amor,</strong></p>
+        <p>Eu só queria encontrar um jeitinho diferente de te lembrar do quanto você é importante para mim.</p>
+        <p>Desde que você entrou na minha vida, meus dias ficaram mais leves, mais felizes e muito mais especiais. Cada abraço, cada conversa, cada risada e cada momento ao seu lado fazem meu coração ter a certeza de que escolhi a pessoa certa para amar.</p>
+        <p>Obrigada por cuidar de mim, por me fazer sorrir mesmo nos dias difíceis e por estar ao meu lado. Você faz minha vida ser mais bonita simplesmente por existir.</p>
+        <p>Quero continuar vivendo muitos momentos com você, realizando sonhos, criando lembranças e construindo a nossa história, um dia de cada vez.</p>
+        <p>Espero que, sempre que você lembrar deste site, também lembre do quanto é amado.</p>
+        <p>Eu te amo infinitamente e sou muito feliz por ter você na minha vida. ❤️</p>
+        <p class="assinatura">Com todo o meu amor,<br />Ana ❤️</p>
+      </article>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
